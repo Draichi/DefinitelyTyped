@@ -26,6 +26,11 @@ export class OrbitControls {
     maxAzimuthAngle: number;
 
     enableDamping: boolean;
+
+    /**
+     * The damping inertia used if .enableDamping is set to true.
+     * Note that for this to work, you must call .update () in your animation loop. Default is 0.05
+     * */
     dampingFactor: number;
 
     enableZoom: boolean;
